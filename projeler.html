@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projelerimiz | Kaba Yapı, Mantolama, Çatı | MTK Global İnşaat</title>
+    <meta name="description" content="MTK Global İnşaat tamamlanmış projeleri - Kaba inşaat, beton kalıp, dış cephe mantolama, çatı yenileme ve anahtar teslim projeler." />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <script>
+    (function(){try{var t=localStorage.getItem('mtk-theme');if(t==='light'){document.addEventListener('DOMContentLoaded',function(){document.body.classList.add('light-mode');});}}catch(e){}})();
+    </script>
+</head>
+<body class="projects-page">
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar navbar-expand-lg navbar-custom scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="MTK Global İnşaat" class="logo-img" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html#" data-bs-toggle="dropdown">Kurumsal</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#hakkimizda">Hakkımızda</a></li>
+                            <li><a class="dropdown-item" href="index.html#misyon">Misyon &amp; Vizyon</a></li>
+                            <li><a class="dropdown-item" href="index.html#kalite">Kalite Politikası</a></li>
+                            <li><a class="dropdown-item" href="index.html#ekibimiz">Ekibimiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html#" data-bs-toggle="dropdown">Hizmetler</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Tüm Hizmetler</a></li>
+                            <li><a class="dropdown-item" href="index.html#kaba-yapi">Kaba Yapı İşleri</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Betonarme Yapı</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Dış Cephe Mantolama</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Çatı Sistemleri</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Anahtar Teslim Projeler</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Renovasyon &amp; Restorasyon</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="projeler.html">Projeler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#iletisim">İletişim</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <button class="btn-theme" id="themeToggle" title="Tema Değiştir">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-hero">
+        <div class="container">
+            <span class="section-subtitle">Referanslarımız</span>
+            <h1>Proje <span class="highlight">Galerimiz</span></h1>
+            <p class="text-white-50 mt-3" style="max-width:650px;">
+                Kaba inşaat, dış cephe mantolama, çatı yenileme ve anahtar teslim projelerimizden kesitler.
+                Detaylar için projeye tıklayın.
+            </p>
+            <a href="index.html" class="btn-back-home">
+                <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+            </a>
+        </div>
+    </section>
+
+    <section class="section-3d" id="projeler">
+        <div class="container pb-5">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="ana-1">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/ana-projeler/proje-1.jpg" alt="Modern Endüstriyel Tesis" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-category">ENDÜSTRİYEL</span>
+                                <h4>Modern Endüstriyel Tesis</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="ana-2">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/ana-projeler/proje-2.jpg" alt="Kaba Yapı Projesi" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-category">KABA YAPI</span>
+                                <h4>Kaba Yapı Projesi</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="ana-3">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/ana-projeler/proje-3.jpg" alt="Beyazcity Rezidans" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-category">KONUT</span>
+                                <h4>Beyazcity Rezidans</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="ana-4">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" alt="Modern Villa Projesi" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-category">VİLLA</span>
+                                <h4>Modern Villa Projesi</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="ana-5">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Ticari Ofis Binası" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-category">TİCARİ</span>
+                                <h4>Ticari Ofis Binası</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="ana-6">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" alt="Dış Cephe Mantolama" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-category">MANTOLAMA</span>
+                                <h4>Dış Cephe Mantolama</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="ana-7">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-10.jpg" alt="İç Mekan Yenileme" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-category">RENOVASYON</span>
+                                <h4>İç Mekan Yenileme</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-1">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-1/kapak.jpg" alt="Kaba İnşaat Kalıp Uygulaması" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Kaba+Insaat+Kalip'" />
+                            <div class="project-overlay">
+                                <span class="project-category">KABA YAPI</span>
+                                <h4>Kaba İnşaat Kalıp Uygulaması</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-2">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-2/kapak.jpg" alt="Dış Mantolama ve Boya" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Dis+Mantolama+Boya'" />
+                            <div class="project-overlay">
+                                <span class="project-category">MANTOLAMA</span>
+                                <h4>Dış Mantolama ve Boya</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-3">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-3/kapak.jpg" alt="Dış Cephe Uygulaması" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Dis+Cephe'" />
+                            <div class="project-overlay">
+                                <span class="project-category">DIŞ CEPHE</span>
+                                <h4>Dış Cephe Uygulaması</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-4">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-4/kapak.jpg" alt="Dış Cephe Projesi" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Dis+Cephe+Proje'" />
+                            <div class="project-overlay">
+                                <span class="project-category">DIŞ CEPHE</span>
+                                <h4>Dış Cephe Projesi</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-5">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-5/1.jpg" alt="Beton Kalıp ve İnce İnşaat Uygulaması" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Beton+Kalip+Ince+Insaat'" />
+                            <div class="project-overlay">
+                                <span class="project-category">BETONARME</span>
+                                <h4>Beton Kalıp ve İnce İnşaat Uygulaması</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> 5 Fotoğraf</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-6">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-6/kapak.jpg" alt="Dış Cephe Mantolama" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Dis+Cephe+Mantolama'" />
+                            <div class="project-overlay">
+                                <span class="project-category">MANTOLAMA</span>
+                                <h4>Dış Cephe Mantolama</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-7">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-7/kapak.jpg" alt="Çatı Yenileme" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Cati+Yenileme'" />
+                            <div class="project-overlay">
+                                <span class="project-category">ÇATI</span>
+                                <h4>Çatı Yenileme</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-8">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-8/kapak.jpg" alt="Mantolama Dış" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Mantolama+Dis'" />
+                            <div class="project-overlay">
+                                <span class="project-category">MANTOLAMA</span>
+                                <h4>Mantolama Dış</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-9">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-9/kapak.jpg" alt="Arnavutluk Dış Cephe Mantolama" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Arnavutluk+Proje'" />
+                            <div class="project-overlay">
+                                <span class="project-category">ULUSLARARASI</span>
+                                <h4>Arnavutluk Dış Cephe Mantolama ve Komple İnce İnşaat</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-showcase" data-project="guncel-10">
+                        <div class="project-image-wrapper">
+                            <img src="assets/img/projeler/proje-10/kapak.jpg" alt="Dış Cephe Projesi" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/ff9500/050810?text=Dis+Cephe+Proje'" />
+                            <div class="project-overlay">
+                                <span class="project-category">DIŞ CEPHE</span>
+                                <h4>Dış Cephe Projesi</h4>
+                                <span class="project-btn"><i class="fas fa-images"></i> Proje Detayları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="assets/img/logo.png" alt="MTK Global İnşaat" style="max-width:200px; margin-bottom:20px; background:#fff; padding:8px 16px; border-radius:12px;" />
+                    <p style="max-width:300px;">Komple yapı ve taahhüt firması olarak kaba yapıdan anahtar teslim projelere kadar geniş hizmet yelpazesiyle yanınızdayız.</p>
+                    <p class="mt-3" style="font-size:0.85rem; color:rgba(255,255,255,0.4);">MTK GLOBAL İNŞ. TUR. VE LOJ LTD. ŞTİ.</p>
+                    <div class="mt-3">
+                        <a href="https://www.instagram.com/mtk.insaat" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@mtk.insaat" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/905454503853" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Kurumsal</h5>
+                    <p><a href="index.html#hakkimizda">Hakkımızda</a></p>
+                    <p><a href="index.html#kalite">Kalite Politikası</a></p>
+                    <p><a href="kvkk.html">KVKK</a></p>
+                    <p><a href="blog.html">Blog</a></p>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Hizmetler</h5>
+                    <p><a href="index.html#kaba-yapi">Kaba Yapı İşleri</a></p>
+                    <p><a href="index.html#hizmetler">Betonarme Yapı</a></p>
+                    <p><a href="index.html#hizmetler">Dış Cephe Mantolama</a></p>
+                    <p><a href="index.html#hizmetler">Anahtar Teslim Projeler</a></p>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>İletişim</h5>
+                    <p><i class="fas fa-phone me-2 text-warning"></i> <a href="tel:+905454503853" style="color:rgba(255,255,255,0.5);">+90 545 450 38 53</a></p>
+                    <p><i class="fas fa-map-pin me-2 text-warning"></i> Beylikdüzü / İstanbul</p>
+                    <p><i class="fas fa-envelope me-2 text-warning"></i> <a href="mailto:mtk.globalinsaat@gmail.com" style="color:rgba(255,255,255,0.5);">mtk.globalinsaat@gmail.com</a></p>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25 my-4" />
+            <p class="text-center text-white-50 m-0" style="font-size:0.85rem;">
+                &copy; 2026 MTK Global İnşaat – Tüm hakları saklıdır. | Web tasarım: <a href="https://www.webflux.com.tr" target="_blank" rel="noopener" style="color:#ff9500; text-decoration:none; font-weight:600;">www.webflux.com.tr</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

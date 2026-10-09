@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İzolasyon Nedir? Su, Isı ve Ses Yalıtımı Rehberi | MTK Global İnşaat</title>
+    <meta name="description" content="Su yalıtımı, ısı izolasyonu ve ses yalıtımı hakkında kapsamlı rehber." />
+    <link rel="canonical" href="https://mtkglobalinsaat.com.tr/blog-izolasyon-rehberi.html" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script>
+    (function(){try{var t=localStorage.getItem('mtk-theme');if(t==='light'){document.addEventListener('DOMContentLoaded',function(){document.body.classList.add('light-mode');});}}catch(e){}})();
+    </script>
+</head>
+<body class="blog-post-page">
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar navbar-expand-lg navbar-custom scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="MTK" class="logo-img" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html#" data-bs-toggle="dropdown">Kurumsal</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#hakkimizda">Hakkımızda</a></li>
+                            <li><a class="dropdown-item" href="index.html#misyon">Misyon &amp; Vizyon</a></li>
+                            <li><a class="dropdown-item" href="index.html#kalite">Kalite Politikası</a></li>
+                            <li><a class="dropdown-item" href="index.html#ekibimiz">Ekibimiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html#" data-bs-toggle="dropdown">Hizmetler</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Tüm Hizmetler</a></li>
+                            <li><a class="dropdown-item" href="index.html#kaba-yapi">Kaba Yapı İşleri</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Betonarme Yapı</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Dış Cephe Mantolama</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Çatı Sistemleri</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Anahtar Teslim Projeler</a></li>
+                            <li><a class="dropdown-item" href="index.html#hizmetler">Renovasyon &amp; Restorasyon</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="projeler.html">Projeler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#iletisim">İletişim</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <button class="btn-theme" id="themeToggle" title="Tema Değiştir"><i class="fas fa-sun"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <div class="container">
+            <nav class="blog-breadcrumb">
+                <a href="index.html">Ana Sayfa</a><i class="fas fa-chevron-right"></i>
+                <a href="blog.html">Blog</a><i class="fas fa-chevron-right"></i>
+                <span>İzolasyon Rehberi</span>
+            </nav>
+
+            <header class="blog-post-header">
+                <span class="blog-post-category">İZOLASYON</span>
+                <h1>İzolasyon Nedir? Su, Isı ve Ses Yalıtımı Rehberi</h1>
+                <div class="blog-post-meta">
+                    <span><i class="fas fa-calendar"></i> 12 Eylül 2026</span>
+                    <span><i class="fas fa-clock"></i> 8 dk okuma</span>
+                </div>
+            </header>
+
+            <div class="blog-post-cover">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80" alt="İzolasyon Rehberi" />
+            </div>
+
+            <div class="blog-post-content">
+                <p class="lead">
+                    İzolasyon (yalıtım), yapıların dış etkenlerden korunması ve enerji verimliliğinin
+                    artırılması için yapılan uygulamalardır. Doğru izolasyon, hem binanızı korur hem
+                    de uzun vadede ciddi tasarruf sağlar.
+                </p>
+
+                <h2>İzolasyon Çeşitleri Nelerdir?</h2>
+
+                <h3>1. Su İzolasyonu (Su Yalıtımı)</h3>
+                <p>Su yalıtımı, yapının su ile temas eden bölgelerinde suyun içeri girmesini engelleyen uygulamadır. Özellikle <strong>banyo, tuvalet, mutfak, teras, balkon ve çatı</strong> gibi ıslak hacimlerde zorunludur.</p>
+                <p>Su yalıtımı yapılmayan binalarda:</p>
+                <ul class="blog-list-check">
+                    <li>❌ Rutubet ve küf oluşur</li>
+                    <li>❌ Alt komşuya su sızar</li>
+                    <li>❌ Duvar ve zemin kaplamaları bozulur</li>
+                    <li>❌ Betonarme demirler paslanır</li>
+                    <li>❌ Yapının ömrü kısalır</li>
+                </ul>
+
+                <h3>2. Isı İzolasyonu (Mantolama)</h3>
+                <p>Isı yalıtımı, binanın ısı kaybını azaltmak için dış cepheye veya iç cepheye uygulanan yalıtımdır. En yaygın yöntem <strong>dış cephe mantolama</strong>dır.</p>
+                <p>Isı yalıtımının faydaları:</p>
+                <ul class="blog-list-check">
+                    <li>✅ %40-60'a kadar ısıtma tasarrufu</li>
+                    <li>✅ Yaz aylarında serin kalma</li>
+                    <li>✅ Bina dış görünümü güzelleşir</li>
+                    <li>✅ Küf ve rutubet oluşumu engellenir</li>
+                    <li>✅ Karbon ayak izi azalır</li>
+                </ul>
+
+                <h3>3. Ses İzolasyonu</h3>
+                <p>Ses yalıtımı, bina içi ve dışı gürültüyü azaltmak için uygulanır. Özellikle şehir merkezlerinde ve yoğun trafiğe yakın binalarda gereklidir.</p>
+
+                <h3>4. Temel İzolasyonu</h3>
+                <p>Yapının temelinde, toprak neminden ve yeraltı suyundan korunmak için uygulanır. Yeni yapılarda mutlaka yapılması gerekir.</p>
+
+                <h2>İzolasyon Malzemeleri Nelerdir?</h2>
+                <ul class="blog-list-check">
+                    <li><strong>XPS (Ekstrüde Polistiren):</strong> Su emmez, yüksek ısı yalıtımı sağlar</li>
+                    <li><strong>EPS (Genleştirilmiş Polistiren):</strong> Ekonomik, yaygın kullanılan</li>
+                    <li><strong>Taş Yünü:</strong> Yanmaz, hem ısı hem ses yalıtımı</li>
+                    <li><strong>Poliüretan:</strong> Yüksek performans, ince uygulama</li>
+                    <li><strong>Membran:</strong> Su yalıtımı için bitüm esaslı</li>
+                    <li><strong>Sürme Su Yalıtımı:</strong> Banyo ve ıslak hacimlerde kullanılan</li>
+                </ul>
+
+                <h2>İzolasyon Ne Zaman Yapılmalıdır?</h2>
+                <ul class="blog-list-check">
+                    <li><strong>Yeni yapı:</strong> İnşaat aşamasında zorunlu</li>
+                    <li><strong>Banyo tadilatı:</strong> Seramik söküldüğünde mutlaka</li>
+                    <li><strong>Çatı yenileme:</strong> Kiremit değişiminde ideal</li>
+                    <li><strong>Enerji tasarrufu:</strong> Kış öncesi sonbahar</li>
+                    <li><strong>Rutubet sorunu:</strong> Vakit kaybetmeden</li>
+                </ul>
+
+                <h2>İzolasyon Uygulamasında Dikkat Edilmesi Gerekenler</h2>
+                <ul class="blog-list-check">
+                    <li><strong>Yüzey hazırlığı:</strong> Yüzey temiz, kuru ve düzgün olmalı</li>
+                    <li><strong>Malzeme kalitesi:</strong> TSE sertifikalı ürünler tercih edilmeli</li>
+                    <li><strong>Uygulama kalınlığı:</strong> Standartlara uygun olmalı</li>
+                    <li><strong>Birleşim noktaları:</strong> Ek yerleri iyi kapatılmalı</li>
+                    <li><strong>Usta deneyimi:</strong> Deneyimli usta işçiliği şart</li>
+                    <li><strong>Garanti:</strong> En az 5 yıl garanti verilmeli</li>
+                </ul>
+
+                <h2>Neden MTK Global İnşaat?</h2>
+                <ul class="blog-list-check">
+                    <li>✅ 10+ yıl tecrübe</li>
+                    <li>✅ Ücretsiz keşif ve detaylı bilgi</li>
+                    <li>✅ TSE sertifikalı malzeme</li>
+                    <li>✅ 5 yıl garanti</li>
+                    <li>✅ İstanbul'un her ilçesine hizmet</li>
+                </ul>
+
+                <div class="blog-post-cta">
+                    <h3>🎯 Ücretsiz Keşif ve Detaylı Bilgi</h3>
+                    <p>İzolasyon ihtiyacınız için hemen bize ulaşın.</p>
+                    <div class="blog-post-cta-buttons">
+                        <a href="tel:+905454503853" class="btn-hero"><i class="fas fa-phone-alt"></i> Hemen Ara</a>
+                        <a href="https://wa.me/905454503853" target="_blank" class="btn-hero-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer-custom">
+        <div class="container">
+            <p class="text-center text-white-50 m-0 py-4" style="font-size:0.85rem;">
+                &copy; 2026 MTK Global İnşaat – Tüm hakları saklıdır. | Web tasarım: <a href="https://www.webflux.com.tr" target="_blank" rel="noopener" style="color:#ff9500; text-decoration:none; font-weight:600;">www.webflux.com.tr</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
